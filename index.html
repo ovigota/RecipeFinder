@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Finder by Ovi</title>
+  <meta name="description" content="Recipe Finder — search by ingredient, save favorites, and cook step by step.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header class="nav">
+    <a class="brand" href="#"><i class="fa-solid fa-utensils" aria-hidden="true"></i>Recipe Finder</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links" class="nav-links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--ghost btn--sm" href="#">Sign in</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Find recipes from what you already have</h1>
+        <p>Search by ingredient, save favorites, and cook step by step.</p>
+        <div class="hero-actions">
+          <a class="dbl-border-btn" href="#recipes">Search recipes</a>
+          <a class="link" href="#features">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="images/pexels_front.jpg" alt="Fresh ingredients and a recipe app screen">
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section container features">
+      <h2 class="visually-hidden">Features</h2>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h3>Search by ingredient</h3>
+        <p>Tell us what’s in your fridge—get instant ideas.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-bookmark"></i></div>
+        <h3>Save favorites</h3>
+        <p>Create lists and keep your go-to meals handy.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-pencil"></i></div>
+        <h3>Step-by-step</h3>
+        <p>Cook with clear steps and timers.</p>
+      </article>
+    </section>
+
+    <!-- Recipes -->
+    <section id="recipes" class="section container recipes">
+      <h2 class="visually-hidden">Sample recipes</h2>
+
+      <article class="recipe-card">
+        <img src="images/recipe-1.jpg" alt="Tomato basil pasta" class="recipe-thumb" loading="lazy">
+        <div class="recipe-body">
+          <h3>Tomato Basil Pasta</h3>
+          <p>15-minute pantry pasta with fresh herbs.</p>
+        </div>
+        <a class="btn btn--sm" href="#">View recipe</a>
+      </article>
+
+      <article class="recipe-card">
+        <img src="images/recipe-2.jpg" alt="Veggie stir fry" class="recipe-thumb" loading="lazy">
+        <div class="recipe-body">
+          <h3>Veggie Stir Fry</h3>
+          <p>Crisp veggies, soy-ginger glaze, weeknight easy.</p>
+        </div>
+        <a class="btn btn--sm" href="#">View recipe</a>
+      </article>
+
+      <article class="recipe-card">
+        <img src="images/recipe-3.jpg" alt="Chicken tacos" class="recipe-thumb" loading="lazy">
+        <div class="recipe-body">
+          <h3>Chicken Tacos</h3>
+          <p>Juicy, zesty, crowd-pleaser in 20 minutes.</p>
+        </div>
+        <a class="btn btn--sm" href="#">View recipe</a>
+      </article>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta container">
+      <h2>Ready to cook smarter?</h2>
+      <a class="dbl-border-btn" href="#">Sign up free</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Support</a>
+    </div>
+    <p>© <span id="y"></span> RecipeFinder by
+      <span class="sarthius">
+        <img src="images/logoSarthius.png" alt="Sarthius">
+      </span>
+    </p>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // mobile menu toggle
+    const btn = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-links');
+    btn?.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('is-open');
+    });
+  </script>
+</body>
+</html>
