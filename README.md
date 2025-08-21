@@ -1,4 +1,9 @@
 # Recipe Finder (Landing Page)
+![GitHub last commit](https://img.shields.io/github/last-commit/ovigota/RecipeFinder)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Made with](https://img.shields.io/badge/made%20with-HTML%20%26%20CSS-orange)
+
+
 
 A responsive landing page for a fictional recipe-search app. Built mobile-first with semantic HTML and modern CSS.
 
