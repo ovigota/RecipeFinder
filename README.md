@@ -6,7 +6,7 @@ A responsive landing page for a fictional recipe-search app. Built mobile-first 
 
 ## Live Demo
 <!-- Replace this after publishing -->
-https://ovigota.github.io/RecipeFinder/
+https://ovigota.github.io/RecipeFinder
 
 ## Features
 - Clean, responsive layout (grid + flex)
