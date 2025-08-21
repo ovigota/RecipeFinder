@@ -7,7 +7,7 @@
 
 A responsive landing page for a fictional recipe-search app. Built mobile-first with semantic HTML and modern CSS.
 
-![Recipe Finder preview](images/preview.jpg)
+![Recipe Finder preview](images/preview.png)
 
 ## Live Demo
 <!-- Replace this after publishing -->
