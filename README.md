@@ -28,14 +28,14 @@ https://ovigota.github.io/RecipeFinder
 ## Project Structure
 
 recipe-finder/
-├─ index.html
-├─ styles.css
-├─ images/
-│ ├─ pexels_front.jpg
-│ ├─ recipe-1.jpg
-│ ├─ recipe-2.jpg
-│ ├─ recipe-3.jpg
-│ └─ logoSarthius.png
+  ├─ index.html
+  ├─ styles.css
+  ├─ images/
+    │ ├─ pexels_front.jpg
+    │ ├─ recipe-1.jpg
+    │ ├─ recipe-2.jpg
+    │ ├─ recipe-3.jpg
+    │ └─ logoSarthius.png
 └─ README.md
 
 ##  Getting Started (local)
